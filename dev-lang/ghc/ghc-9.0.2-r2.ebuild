@@ -722,6 +722,7 @@ src_configure() {
 			# GHC embeds full path for ffi includes without /usr/${CTARGET} account.
 			econf_args+=(--with-system-libffi)
 			econf_args+=(--with-ffi-includes=$($(tc-getPKG_CONFIG) libffi --cflags-only-I | sed -e 's@^-I@@'))
+			econf_args+=(--with-ffi-libraries=/usr/lib/)
 		fi
 
 		einfo "Final mk/build.mk:"
