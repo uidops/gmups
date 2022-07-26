@@ -15,6 +15,8 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
+S="${WORKDIR}"
+
 src_prepare() {
 	default_src_prepare
 	./autogen.sh -a
