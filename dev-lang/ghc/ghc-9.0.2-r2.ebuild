@@ -77,7 +77,7 @@ BUMP_LIBRARIES=(
 
 LICENSE="BSD"
 SLOT="0/${PV}"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE="big-endian +doc elfutils ghcbootstrap ghcmakebinary +gmp numa profile test"
 IUSE+=" binary"
 RESTRICT="!test? ( test )"
@@ -91,13 +91,6 @@ RDEPEND="
 	numa? ( sys-process/numactl )
 "
 
-# This set of dependencies is needed to run
-# prebuilt ghc. We specifically avoid ncurses
-# dependency with:
-#    utils/ghc-pkg_HC_OPTS += -DBOOTSTRAPPING
-PREBUILT_BINARY_DEPENDS="
-	!prefix? ( elibc_glibc? ( >=sys-libs/glibc-2.17 ) )
-"
 # This set of dependencies is needed to install
 # ghc[binary] in system. terminfo package is linked
 # against ncurses.
@@ -722,7 +715,6 @@ src_configure() {
 			# GHC embeds full path for ffi includes without /usr/${CTARGET} account.
 			econf_args+=(--with-system-libffi)
 			econf_args+=(--with-ffi-includes=$($(tc-getPKG_CONFIG) libffi --cflags-only-I | sed -e 's@^-I@@'))
-			econf_args+=(--with-ffi-libraries=/usr/lib/)
 		fi
 
 		einfo "Final mk/build.mk:"
