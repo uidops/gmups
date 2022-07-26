@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit git-r3
-
 DESCRIPTION="Jalali calendar library"
 HOMEPAGE="http://nongnu.org/jcal"
 SRC_URI="http://download.savannah.gnu.org/releases/jcal/${P/_}.tar.gz"
