@@ -94,9 +94,7 @@ RDEPEND="
 # This set of dependencies is needed to install
 # ghc[binary] in system. terminfo package is linked
 # against ncurses.
-PREBUILT_BINARY_RDEPENDS="${PREBUILT_BINARY_DEPENDS}
-	sys-libs/ncurses:0/6
-"
+PREBUILT_BINARY_RDEPENDS="sys-libs/ncurses:0/6"
 
 RDEPEND+="binary? ( ${PREBUILT_BINARY_RDEPENDS} )"
 
@@ -108,7 +106,6 @@ BDEPEND="
 		app-text/docbook-xsl-stylesheets
 		dev-python/sphinx
 		>=dev-libs/libxslt-1.1.2 )
-	!ghcbootstrap? ( ${PREBUILT_BINARY_DEPENDS} )
 	test? ( ${PYTHON_DEPS} )
 "
 
