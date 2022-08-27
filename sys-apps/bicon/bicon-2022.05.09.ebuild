@@ -16,15 +16,10 @@ IUSE=""
 DEPEND=">=dev-libs/fribidi-0.10.4"
 RDEPEND=""
 
-S="${WORKDIR}"
-
-src_prepare() {
-	default_src_prepare
-	./autogen.sh -a
-}
+S="${WORKDIR}/${PN}-${COMMIT}"
 
 src_configure() {
-	econf
+	./autogen.sh
 }
 
 src_compile() {
