@@ -1,3 +1,4 @@
 -dev-haskell/githash
 -dev-haskell/optparse-simple
 -dev-haskell/megaparsec
+-dev-haskell/parser-combinators
