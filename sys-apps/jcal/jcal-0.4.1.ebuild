@@ -1,7 +1,8 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
+PYTHON_COMPAT=( python3_{8..11} )
 
 DESCRIPTION="Jalali calendar library"
 HOMEPAGE="http://nongnu.org/jcal"
@@ -10,7 +11,7 @@ SRC_URI="http://download.savannah.gnu.org/releases/jcal/${P/_}.tar.gz"
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="pic python static-libs"
 
 DEPEND=""
 RDEPEND=""
