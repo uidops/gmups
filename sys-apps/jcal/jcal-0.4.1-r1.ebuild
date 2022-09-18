@@ -3,6 +3,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{8..11} )
+inherit python-r1
 
 DESCRIPTION="Jalali calendar library"
 HOMEPAGE="http://nongnu.org/jcal"
@@ -11,10 +12,10 @@ SRC_URI="http://download.savannah.gnu.org/releases/jcal/${P/_}.tar.gz"
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="pic python static-libs"
+IUSE="pyjalali static-libs"
 
 DEPEND=""
-RDEPEND=""
+BDEPEND="sys-libs/readline"
 
 S="${WORKDIR}"
 
@@ -24,13 +25,17 @@ src_prepare() {
 }
 
 src_configure() {
-	econf
-}
+	econf \
+		$(use_enable pyjalali) \
+		$(use_enable static-libs static) \
+		--host=${CHOST} \
+		--build=${CBUILD} \
+		--prefix="${D}" \
 
 src_compile() {
 	emake || die
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake install || die
 }
