@@ -8,19 +8,13 @@ inherit bash-completion-r1 toolchain-funcs
 DESCRIPTION="unix-like reverse engineering framework and commandline tools"
 HOMEPAGE="https://www.radare.org"
 
-BINS_COMMIT=f8f30af214dd90ef13407b97a4b71c3f02324e44
+BINS_COMMIT="ec457b046263fd49b127669c63bf6b7a443a411d"
 
-if [[ ${PV} == *9999 ]]; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/radareorg/radare2"
-else
-	SRC_URI="mirror+https://github.com/radareorg/radare2/archive/${PV}.tar.gz -> ${P}.tar.gz
-		test? ( https://github.com/radareorg/radare2-testbins/archive/${BINS_COMMIT}.tar.gz -> radare2-testbins-${BINS_COMMIT}.tar.gz )
-	"
+SRC_URI="mirror+https://github.com/radareorg/radare2/archive/${PV}.tar.gz -> ${P}.tar.gz
+	test? ( https://github.com/radareorg/radare2-testbins/archive/${BINS_COMMIT}.tar.gz -> radare2-testbins-${BINS_COMMIT}.tar.gz )
+"
 
-	KEYWORDS="~amd64 ~x86"
-fi
-
+KEYWORDS="~amd64"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="ssl test"
@@ -36,6 +30,7 @@ RDEPEND="
 	dev-libs/capstone:0=
 	ssl? ( dev-libs/openssl:0= )
 "
+
 DEPEND="
 	${RDEPEND}
 	dev-util/gperf
