@@ -26,11 +26,8 @@ src_prepare() {
 
 src_configure() {
 	econf \
-		$(use_enable pyjalali) \
-		$(use_enable static-libs static) \
-		--host=${CHOST} \
-		--build=${CBUILD} \
-		--prefix="${D}"
+		$(use pyjalali && echo "--enable-pyjalali") \
+		$(use !static-libs && echo "--enable-statc=no")
 }
 
 src_compile() {
