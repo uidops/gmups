@@ -27,6 +27,7 @@ src_prepare() {
 src_configure() {
 	econf \
 		$(use pyjalali && echo "--enable-pyjalali") \
+		--enable-static=yes \
 		$(use !static-libs && echo "--enable-static=no")
 }
 
