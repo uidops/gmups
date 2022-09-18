@@ -30,7 +30,7 @@ src_configure() {
 		$(use_enable static-libs static) \
 		--host=${CHOST} \
 		--build=${CBUILD} \
-		--prefix="${D}" \
+		--prefix="${D}"
 
 src_compile() {
 	emake || die
