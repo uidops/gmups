@@ -35,5 +35,5 @@ src_compile() {
 }
 
 src_install() {
-	emake install || die
+	emake DESTDIR="${D}" install || die
 }
