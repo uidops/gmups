@@ -31,6 +31,7 @@ src_configure() {
 		--host=${CHOST} \
 		--build=${CBUILD} \
 		--prefix="${D}"
+}
 
 src_compile() {
 	emake || die
