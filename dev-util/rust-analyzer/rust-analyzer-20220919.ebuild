@@ -70,7 +70,7 @@ CRATES="
 	libmimalloc-sys-0.1.25
 	lock_api-0.4.7
 	log-0.4.17
-	lsp-types-0.93.0
+	lsp-types-0.93.1
 	matchers-0.1.0
 	matches-0.1.9
 	memchr-2.5.0
