@@ -96,6 +96,8 @@ CRATES="
 	petgraph-0.5.1
 	pin-project-lite-0.2.9
 	proc-macro2-1.0.43
+	protobuf-3.1.0
+	protobuf-support-3.1.0
 	pulldown-cmark-0.9.2
 	pulldown-cmark-to-cmark-10.0.2
 	quote-1.0.21
@@ -113,6 +115,7 @@ CRATES="
 	salsa-0.17.0-pre.2
 	salsa-macros-0.17.0-pre.2
 	same-file-1.0.6
+	scip-0.1.1
 	scoped-tls-1.0.0
 	scopeguard-1.1.0
 	semver-1.0.13
@@ -127,6 +130,8 @@ CRATES="
 	syn-1.0.99
 	synstructure-0.12.6
 	text-size-1.1.0
+	thiserror-1.0.31
+	thiserror-impl-1.0.31
 	thread_local-1.1.4
 	threadpool-1.8.1
 	tikv-jemalloc-ctl-0.5.0
