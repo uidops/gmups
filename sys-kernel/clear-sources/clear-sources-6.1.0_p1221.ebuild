@@ -59,8 +59,6 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/sched-hybrid1.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
-	"${CLEAR_PATCHDIR}"/scaling-1.patch
-	"${CLEAR_PATCHDIR}"/scaling-2.patch
 "
 
 src_unpack() {
