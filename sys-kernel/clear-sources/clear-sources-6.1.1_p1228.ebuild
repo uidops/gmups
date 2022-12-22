@@ -5,7 +5,7 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="1"
+K_GENPATCHES_VER="2"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
@@ -56,6 +56,8 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/libsgrowdown.patch
 	"${CLEAR_PATCHDIR}"/kdf-boottime.patch
 	"${CLEAR_PATCHDIR}"/adlrdt.patch
+	"${CLEAR_PATCHDIR}"/kvm-printk.patch
+	"${CLEAR_PATCHDIR}"/epp-retune.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid1.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
