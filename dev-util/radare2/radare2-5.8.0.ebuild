@@ -56,7 +56,6 @@ src_configure() {
 	export HOST_CC=${CC}
 
 	econf \
-		--without-libuv \
 		--with-syscapstone \
 		--with-sysmagic \
 		--with-sysxxhash \
