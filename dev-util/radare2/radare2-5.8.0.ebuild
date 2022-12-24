@@ -37,10 +37,6 @@ DEPEND="
 "
 BDEPEND="virtual/pkgconfig"
 
-PATCHES=(
-	"${FILESDIR}/${PN}-5.7.8-llvm-15-fix-int-conversion.patch"
-)
-
 src_prepare() {
 	default
 
