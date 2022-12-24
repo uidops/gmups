@@ -14,7 +14,7 @@ HOMEPAGE="http://www.capstone-engine.org/"
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/capstone-engine/capstone.git"
-	EGIT_REPO_BRANCH="next"
+	EGIT_BRANCH="next"
 	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 fi
 
