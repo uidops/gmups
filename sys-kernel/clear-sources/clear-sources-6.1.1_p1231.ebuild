@@ -61,6 +61,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/sched-hybrid1.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
+	"${CLEAR_PATCHDIR}"/tcptuning.patch
 "
 
 src_unpack() {
