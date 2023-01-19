@@ -5,7 +5,7 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="8"
+K_GENPATCHES_VER="9"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
@@ -53,6 +53,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0130-itmt2-ADL-fixes.patch
 	"${CLEAR_PATCHDIR}"/0131-add-a-per-cpu-minimum-high-watermark-an-tune-batch-s.patch
 	"${CLEAR_PATCHDIR}"/0133-novector.patch
+	"${CLEAR_PATCHDIR}"/0134-md-raid6-algorithms-scale-test-duration-for-speedier.patch
 	"${CLEAR_PATCHDIR}"/scale.patch
 	"${CLEAR_PATCHDIR}"/libsgrowdown.patch
 	"${CLEAR_PATCHDIR}"/kdf-boottime.patch
