@@ -54,7 +54,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0131-add-a-per-cpu-minimum-high-watermark-an-tune-batch-s.patch
 	"${CLEAR_PATCHDIR}"/0133-novector.patch
 	"${CLEAR_PATCHDIR}"/0134-md-raid6-algorithms-scale-test-duration-for-speedier.patch
-	"#{CLEAR_PATCHDIR}"/0135-initcall-only-print-non-zero-initcall-debug-to-speed.patch
+	"${CLEAR_PATCHDIR}"/0135-initcall-only-print-non-zero-initcall-debug-to-speed.patch
 	"${CLEAR_PATCHDIR}"/scale.patch
 	"${CLEAR_PATCHDIR}"/libsgrowdown.patch
 	"${CLEAR_PATCHDIR}"/kdf-boottime.patch
