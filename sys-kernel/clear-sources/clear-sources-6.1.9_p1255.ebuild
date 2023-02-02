@@ -24,7 +24,6 @@ CLEAR_PATCHDIR="${WORKDIR}/linux-${CLEAR_VER}"
 
 UNIPATCH_STRICTORDER=1
 UNIPATCH_LIST="
-	"${CLEAR_PATCHDIR}"/0001-add-umonitor-umwait-C0.x-C-states.patch
 	"${CLEAR_PATCHDIR}"/0001-powerbump-functionality.patch
 	"${CLEAR_PATCHDIR}"/0101-i8042-decrease-debug-message-level-to-info.patch
 	"${CLEAR_PATCHDIR}"/0102-increase-the-ext4-default-commit-age.patch
