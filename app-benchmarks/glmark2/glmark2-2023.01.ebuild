@@ -26,8 +26,6 @@ DEPEND="${RDEPEND}
 
 REQUIRED_USE="|| ( opengl gles2 ) || ( drm wayland X )"
 
-PATCHES=( "${FILESDIR}"/waflib-open-mode-python3_11.patch )
-
 src_prepare() {
 	default
 	rm -rf "${S}/src/libpng"
