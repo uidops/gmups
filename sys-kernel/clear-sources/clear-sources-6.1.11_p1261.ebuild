@@ -5,7 +5,7 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="12"
+K_GENPATCHES_VER="13"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
@@ -67,6 +67,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
 	"${CLEAR_PATCHDIR}"/tcptuning.patch
+	"${CLEAR_PATCHDIR}"/netscale.patch
 "
 
 src_unpack() {
