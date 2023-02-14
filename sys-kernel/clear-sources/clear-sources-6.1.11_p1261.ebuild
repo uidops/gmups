@@ -25,7 +25,6 @@ CLEAR_PATCHDIR="${WORKDIR}/linux-${CLEAR_VER}"
 UNIPATCH_STRICTORDER=1
 UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0001-powerbump-functionality.patch
-	"${CLEAR_PATCHDIR}"/0001-mm-memcontrol-add-some-branch-hints-based-on-gcov-an.patch
 	"${CLEAR_PATCHDIR}"/0002-sched-core-add-some-branch-hints-based-on-gcov-analy.patch
 	"${CLEAR_PATCHDIR}"/0101-i8042-decrease-debug-message-level-to-info.patch
 	"${CLEAR_PATCHDIR}"/0102-increase-the-ext4-default-commit-age.patch
@@ -67,6 +66,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
 	"${CLEAR_PATCHDIR}"/tcptuning.patch
+	"${CLEAR_PATCHDIR}"/netscale.patch
 "
 
 src_unpack() {
