@@ -5,7 +5,7 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="13"
+K_GENPATCHES_VER="14"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
@@ -24,6 +24,8 @@ CLEAR_PATCHDIR="${WORKDIR}/linux-${CLEAR_VER}"
 
 UNIPATCH_STRICTORDER=1
 UNIPATCH_LIST="
+	"${CLEAR_PATCHDIR}"/0001-sched-migrate.patch
+	"${CLEAR_PATCHDIR}"/0002-sched-migrate.patch
 	"${CLEAR_PATCHDIR}"/0001-powerbump-functionality.patch
 	"${CLEAR_PATCHDIR}"/0002-sched-core-add-some-branch-hints-based-on-gcov-analy.patch
 	"${CLEAR_PATCHDIR}"/0101-i8042-decrease-debug-message-level-to-info.patch
