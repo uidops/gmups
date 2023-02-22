@@ -69,6 +69,8 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
 	"${CLEAR_PATCHDIR}"/tcptuning.patch
 	"${CLEAR_PATCHDIR}"/netscale.patch
+	"${CLEAR_PATCHDIR}"/iommu.patch
+	"${CLEAR_PATCHDIR}"/scale.patch
 "
 
 src_unpack() {
