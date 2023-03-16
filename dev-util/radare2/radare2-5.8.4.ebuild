@@ -8,7 +8,7 @@ inherit bash-completion-r1 toolchain-funcs
 DESCRIPTION="unix-like reverse engineering framework and commandline tools"
 HOMEPAGE="https://www.radare.org"
 
-BINS_COMMIT="2133e0b82dd7c48a51033c51e1a325c2d43c4482"
+BINS_COMMIT="d4e7f73808b730b71123bdebcb2f94e1fbc90ba1"
 
 SRC_URI="mirror+https://github.com/radareorg/radare2/archive/${PV}.tar.gz -> ${P}.tar.gz
 	test? ( https://github.com/radareorg/radare2-testbins/archive/${BINS_COMMIT}.tar.gz -> radare2-testbins-${BINS_COMMIT}.tar.gz )
