@@ -20,8 +20,6 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-PATCHES=( "${FILESDIR}/more.patch" )
-
 get_loader_name() {
 	# Loosely based on Adélie APKBUILD
 	# TODO: Check against glibc’s logic
