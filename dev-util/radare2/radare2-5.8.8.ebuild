@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit bash-completion-r1 toolchain-funcs
 DESCRIPTION="unix-like reverse engineering framework and commandline tools"
 HOMEPAGE="https://www.radare.org"
 
-BINS_COMMIT="5746f74f58d0473472d231c1b522dee17241177f"
+BINS_COMMIT="2537334085d4295c1a5eec9bfca2b00d70bf30b0"
 
 SRC_URI="mirror+https://github.com/radareorg/radare2/archive/${PV}.tar.gz -> ${P}.tar.gz
 	test? ( https://github.com/radareorg/radare2-testbins/archive/${BINS_COMMIT}.tar.gz -> radare2-testbins-${BINS_COMMIT}.tar.gz )
