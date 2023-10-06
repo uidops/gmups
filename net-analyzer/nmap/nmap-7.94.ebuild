@@ -5,7 +5,7 @@ EAPI=8
 
 LUA_COMPAT=( lua5-4 luajit )
 # LUA_REQ_USE="deprecated"
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 PLOCALES="de es fr hi hr hu id it ja pl pt_BR pt_PR ro ru sk zh"
 PLOCALE_BACKUP="en"
 inherit autotools lua-single plocale python-single-r1 toolchain-funcs
