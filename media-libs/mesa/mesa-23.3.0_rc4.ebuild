@@ -32,7 +32,6 @@ done
 
 PATCHES=(
 	"${FILESDIR}/clang_fix_lld17.patch"
-	"${FILESDIR}/clang_config_tool.patch"
 )
 
 IUSE="${IUSE_VIDEO_CARDS}
